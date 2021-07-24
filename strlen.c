@@ -22,10 +22,9 @@ int strlen3(char *arr)
 	return p - arr;
 }
 
-int main()
+int main(int argc , char **argv)
 {
-	char *arr = "test test test";
-	
+	char *arr = *(argv + 1); // pass the string using command line arguments	
 	printf("%d\n", strlen3(arr));
 	return 0;
 }
